@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*.specialscroll::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 20px;
+}
+.specialscroll::-webkit-scrollbar {
+  width: 0;
+  position: relative;
+  top: 0;
+}
+.specialscroll::-webkit-scrollbar-button {
+  height: 100px;
+}
+*/
