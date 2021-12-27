@@ -21,8 +21,7 @@ export const ImdbProvider = ({ children }) => {
         method: "GET",
         headers: {
           "x-rapidapi-host": "imdb8.p.rapidapi.com",
-          "x-rapidapi-key":
-            "25d6ada833msh84fd862b72ce345p159b89jsnf3cd9d793ab3",
+          "x-rapidapi-key": `25d6ada833msh84fd862b72ce345p159b89jsnf3cd9d793ab3`,
         },
       }
     );
