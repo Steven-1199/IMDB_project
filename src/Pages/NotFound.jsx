@@ -8,7 +8,7 @@ function NotFound() {
         <div className="max-w-lg">
           <h1 className="text-8xl font-bold mb-8">Oops!</h1>
           <p className="text-5xl mb-8">404 - Page Not Found!</p>
-          <Link className="btn b btn-lg bg-zinc-900" to="/">
+          <Link className="btn b btn-lg bg-zinc-900" to="/:IMDB_project">
             <FaHome className="mr-2" />
             Back To Home
           </Link>

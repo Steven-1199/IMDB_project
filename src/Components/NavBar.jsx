@@ -9,7 +9,7 @@ function NavBar() {
         <img src={imdblogo}></img>
       </div>
       <div className="w-35 font-bold text-lg text-white">
-        <Link to="/">
+        <Link to="/:IMDB_project">
           <button className="btn btn-ghost">Home</button>
         </Link>
         <Link to="/about">

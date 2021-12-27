@@ -71,7 +71,7 @@ function Detial() {
 
             <div className="justify-center card-actions">
               <Link
-                to="/"
+                to="/:IMDB_project"
                 onClick={(e) => {
                   clearCasts();
                 }}

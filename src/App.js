@@ -15,7 +15,8 @@ function App() {
         <Router>
           <NavBar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/:IMDB_project" element={<Home />} />
+
             <Route path="/detial/:id" element={<Detial />} />
             <Route path="/about" element={<About />} />
             <Route path="/detial/undefined" element={<NotFound />} />
