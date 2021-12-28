@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/IMDB_project/static/css/main.0872727e.css",
-    "main.js": "/IMDB_project/static/js/main.516f8d16.js",
+    "main.js": "/IMDB_project/static/js/main.554b37c3.js",
     "static/js/787.b910a4fb.chunk.js": "/IMDB_project/static/js/787.b910a4fb.chunk.js",
     "static/media/hug.gif": "/IMDB_project/static/media/hug.757857ce13a4e4e598e4.gif",
     "static/media/instagram.png": "/IMDB_project/static/media/instagram.56d3c2ef9b43e98875c0.png",
@@ -9,11 +9,11 @@
     "static/media/NoImageFound.png": "/IMDB_project/static/media/NoImageFound.298b98203c3825c61303.png",
     "index.html": "/IMDB_project/index.html",
     "main.0872727e.css.map": "/IMDB_project/static/css/main.0872727e.css.map",
-    "main.516f8d16.js.map": "/IMDB_project/static/js/main.516f8d16.js.map",
+    "main.554b37c3.js.map": "/IMDB_project/static/js/main.554b37c3.js.map",
     "787.b910a4fb.chunk.js.map": "/IMDB_project/static/js/787.b910a4fb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0872727e.css",
-    "static/js/main.516f8d16.js"
+    "static/js/main.554b37c3.js"
   ]
 }
