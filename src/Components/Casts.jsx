@@ -5,7 +5,6 @@ import spinner from "../image/hug.gif";
 
 function Casts() {
   const { loadingCasts, casts } = useContext(ImdbContext);
-  // const id = uuidv4();
 
   if (!loadingCasts && casts) {
     return (

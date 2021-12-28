@@ -25,7 +25,7 @@ function Detial() {
     try {
       getOverview(params.id);
     } catch (err) {
-      navigate("/");
+      navigate("/IMDB_project");
     }
   }, []);
   const handleclick = (e) => {
@@ -71,7 +71,7 @@ function Detial() {
 
             <div className="justify-center card-actions">
               <Link
-                to="/:IMDB_project"
+                to="/IMDB_project"
                 onClick={(e) => {
                   clearCasts();
                 }}
@@ -83,9 +83,9 @@ function Detial() {
           </div>
         </div>
 
-        <div className="md:ml-10 sm:mx-0 w-fit md:mt-0 sm:mt-5 md:block sm:flex sm:flex-col sm:items-center">
+        <div className="md:my-10 md:ml-10 sm:mx-0 w-fit  sm:mt-5 md:block sm:flex sm:flex-col sm:items-center">
           <div className="  w-90  shadow stats h-fit ">
-            <div className="stat bg-white/10 text-white">
+            <div className="stat bg-white/10 text-white ">
               <div className="stat-figure text-secondary">
                 <img src={staricon} />
               </div>
