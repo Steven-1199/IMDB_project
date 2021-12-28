@@ -19,10 +19,7 @@ function App() {
 
             <Route path="/detial/:id" element={<Detial />} />
             <Route path="/IMDB_project/about" element={<About />} />
-            <Route
-              path="/IMDB_project/detial/undefined"
-              element={<NotFound />}
-            />
+            <Route path="/detial/undefined" element={<NotFound />} />
           </Routes>
 
           <Footer />
