@@ -16,12 +16,12 @@ export const ImdbProvider = ({ children }) => {
     clearUser();
     setLoading();
     const respone = await fetch(
-      `https://imdb8.p.rapidapi.com/title/find?q=${text}`,
+      `${process.env.REACT_APP_IMDB_URL}/title/find?q=${text}`,
       {
         method: "GET",
         headers: {
           "x-rapidapi-host": "imdb8.p.rapidapi.com",
-          "x-rapidapi-key": `25d6ada833msh84fd862b72ce345p159b89jsnf3cd9d793ab3`,
+          "x-rapidapi-key": `${process.env.REACT_APP_IMDB_KEY}`,
         },
       }
     );
@@ -33,13 +33,12 @@ export const ImdbProvider = ({ children }) => {
   const getOverview = async (id) => {
     setLoading();
     const respone = await fetch(
-      `https://imdb8.p.rapidapi.com/title/get-overview-details?tconst=${id}&currentCountry=US`,
+      `${process.env.REACT_APP_IMDB_URL}/title/get-overview-details?tconst=${id}&currentCountry=US`,
       {
         method: "GET",
         headers: {
           "x-rapidapi-host": "imdb8.p.rapidapi.com",
-          "x-rapidapi-key":
-            "25d6ada833msh84fd862b72ce345p159b89jsnf3cd9d793ab3",
+          "x-rapidapi-key": `${process.env.REACT_APP_IMDB_KEY}`,
         },
       }
     );
@@ -62,13 +61,12 @@ export const ImdbProvider = ({ children }) => {
     clearUser();
     setLoading();
     const respone = await fetch(
-      `https://imdb8.p.rapidapi.com/title/get-most-popular-${t}?homeCountry=US&purchaseCountry=US&currentCountry=US`,
+      `${process.env.REACT_APP_IMDB_URL}/title/get-most-popular-${t}?homeCountry=US&purchaseCountry=US&currentCountry=US`,
       {
         method: "GET",
         headers: {
           "x-rapidapi-host": "imdb8.p.rapidapi.com",
-          "x-rapidapi-key":
-            "25d6ada833msh84fd862b72ce345p159b89jsnf3cd9d793ab3",
+          "x-rapidapi-key": `${process.env.REACT_APP_IMDB_KEY}`,
         },
       }
     );
@@ -78,15 +76,14 @@ export const ImdbProvider = ({ children }) => {
     data = data.slice(0, 14);
     for (let [i, curr] of data.entries()) {
       const respones = await fetch(
-        `https://imdb8.p.rapidapi.com/title/get-details?tconst=${
+        `${process.env.REACT_APP_IMDB_URL}/title/get-details?tconst=${
           curr.split("/")[2]
         }`,
         {
           method: "GET",
           headers: {
             "x-rapidapi-host": "imdb8.p.rapidapi.com",
-            "x-rapidapi-key":
-              "25d6ada833msh84fd862b72ce345p159b89jsnf3cd9d793ab3",
+            "x-rapidapi-key": `${process.env.REACT_APP_IMDB_KEY}`,
           },
         }
       );
@@ -102,13 +99,12 @@ export const ImdbProvider = ({ children }) => {
   const getCasts = async (id) => {
     setLoadingCasts();
     const respones = await fetch(
-      `https://imdb8.p.rapidapi.com/title/get-top-cast?tconst=${id}`,
+      `${process.env.REACT_APP_IMDB_URL}/title/get-top-cast?tconst=${id}`,
       {
         method: "GET",
         headers: {
           "x-rapidapi-host": "imdb8.p.rapidapi.com",
-          "x-rapidapi-key":
-            "25d6ada833msh84fd862b72ce345p159b89jsnf3cd9d793ab3",
+          "x-rapidapi-key": `${process.env.REACT_APP_IMDB_KEY}`,
         },
       }
     );
@@ -118,15 +114,14 @@ export const ImdbProvider = ({ children }) => {
 
     for (let [i, curr] of datas.entries()) {
       const respone = await fetch(
-        `https://imdb8.p.rapidapi.com/actors/get-bio?nconst=${
+        `${process.env.REACT_APP_IMDB_URL}/actors/get-bio?nconst=${
           curr.split("/")[2]
         }`,
         {
           method: "GET",
           headers: {
             "x-rapidapi-host": "imdb8.p.rapidapi.com",
-            "x-rapidapi-key":
-              "25d6ada833msh84fd862b72ce345p159b89jsnf3cd9d793ab3",
+            "x-rapidapi-key": `${process.env.REACT_APP_IMDB_KEY}`,
           },
         }
       );
