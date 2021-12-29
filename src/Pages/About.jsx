@@ -33,7 +33,7 @@ function About() {
               </div>
             </div>
           </div>
-          <Link to="/IMDB_project" className="btn bg-zinc-900 md:mt-10 sm:mt-5">
+          <Link to="/" className="btn bg-zinc-900 md:mt-10 sm:mt-5">
             BACK HOME
           </Link>
         </div>

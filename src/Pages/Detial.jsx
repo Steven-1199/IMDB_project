@@ -25,7 +25,7 @@ function Detial() {
     try {
       getOverview(params.id);
     } catch (err) {
-      navigate("/IMDB_project");
+      navigate("/");
     }
   }, []);
   const handleclick = (e) => {
@@ -71,7 +71,7 @@ function Detial() {
 
             <div className="justify-center card-actions">
               <Link
-                to="/IMDB_project"
+                to="/"
                 onClick={(e) => {
                   clearCasts();
                 }}
